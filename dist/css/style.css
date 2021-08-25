@@ -1,0 +1,158 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle,#f7f2f2,gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #323232;
+  padding: 5px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    "screen screen screen screen"
+    "ac ac del div"
+    "seven eight nine mul"
+    "four five six sub"
+    "one two three sum"
+    "plusMinus zero dot equal"
+  ;
+  width: 23%;
+  height: 75%;
+}
+
+.screen {
+  grid-area: screen;
+  min-height: 100px;
+  background-color: #eceae5;
+  padding: 15px 10px;
+  display: grid;
+  align-content: space-between;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.previous {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  word-break: break-all;
+  font-size: 1.2em;
+  color: #323232;
+}
+
+.current {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  word-break: break-all;
+  font-size: 2.5em;
+  color: #201f1f;
+}
+
+#d0 {
+  grid-area: zero;
+}
+
+#d1 {
+  grid-area: one;
+}
+
+#d2 {
+  grid-area: two;
+}
+
+#d3 {
+  grid-area: three;
+}
+
+#d4 {
+  grid-area: four;
+}
+
+#d5 {
+  grid-area: five;
+}
+
+#d6 {
+  grid-area: six;
+}
+
+#d7 {
+  grid-area: seven;
+}
+
+#d8 {
+  grid-area: eight;
+}
+
+#d9 {
+  grid-area: nine;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.plus {
+  grid-area: sum;
+}
+
+.minus {
+  grid-area: sub;
+}
+
+.mul {
+  grid-area: mul;
+}
+
+.div {
+  grid-area: div;
+}
+
+.plusMinus {
+  grid-area: plusMinus;
+}
+
+.delete {
+  grid-area: del;
+  background-color: #b43535;
+}
+
+.ac {
+  grid-area: ac;
+  background-color: #098b64;
+}
+
+.equal {
+  grid-area: equal;
+  background-color: rgb(103, 117, 243);
+}
+
+button {
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 35px;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  background-color: #ecb17a;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgba(8, 1, 39, 0.973);
+  color: white;
+}
+
+.operator {
+  background-color: #1eb458;
+}
